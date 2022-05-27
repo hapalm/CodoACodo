@@ -1,0 +1,179 @@
+
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    background-image: url('../assets/img/fondo.jpg');
+    color: cornsilk;
+    font-size: 1vw;
+}
+
+#cabecera{
+    width: 100%;
+    top: 0;
+    margin: auto;
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+#nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#items-nav-menu{
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+    width: 100%;
+}
+
+#items-nav-menu a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: cornsilk;
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+p{
+    text-align: justify;
+    font-size: 1vw;
+}
+
+figcaption{
+    font-size: 1vw;
+}
+
+#pieDePagina{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    overflow:hidden;
+}
+
+#servicioTecnico{
+    display: flex;
+    justify-content: space-around;
+}
+
+#detalleServicios{
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+#detalleServicios ul{
+    list-style-type:square;
+    margin:10px 10px 10px 30px;
+    line-height:14px;
+    font-size: 1vw;
+}
+
+#imagenesServicios{
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+#imagenesServicios figure{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#contacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+#divFormularioContacto{
+    width: 50%;
+    margin: 0px 10px 20px 20px;
+    height: 100%;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+
+#detalleContacto{
+    float: left;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+
+#localizacion{
+    text-align: center;
+}
+
+#telefono{
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+}
+
+input{
+    width: 60%;
+}
+
+#seleccionar{
+    text-align: center;
+}
+
+#tipoCliente{
+    width: auto;
+}
+
+#conteiner-submit{
+    width: 100%;
+    text-align: center;
+}
+
+#conteiner-submit input,button{
+    width: 30%;
+    height: 20%;
+    font-size: 1.5vw;
+}
+
+.container-carrousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
