@@ -1,0 +1,45 @@
+
+.imagenFondo {
+    background-image: url("../assets/img/hawaii.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(53, 53, 53);
+    background-blend-mode: soft-light;
+    height: 65vh;
+    margin-top: 5em;
+}
+
+.imagenFondoColumna {
+    background-image: url("../assets/img/honolulu.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.subrayadoPunteado {
+    border-bottom:1px dotted;
+    text-decoration:none;
+  }
+
+.botonFondoComprar {
+    background-color: rgb(57, 165, 57);
+    transition-duration: 0.4s;
+    color: white;
+}
+
+.botonFondoComprar:hover {
+    background-color: rgb(44, 126, 44);
+}
+
+.fondoBotonEnviar {
+    background-color: #8cd829;
+    transition-duration: 0.4s;
+}
+
+.fondoBotonEnviar:hover {
+    background-color: #70ac21;
+}
+
+.fondoFooter {
+    background-color: #1c5475;
+}

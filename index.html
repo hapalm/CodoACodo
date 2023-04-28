@@ -1,214 +1,143 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/a7234454af.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <title>ORKAN TECH ASSISTANCE</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>La Conferencia</title>
 </head>
 <body>
-    <header id="cabecera">
-        <figure>
-            <img src="./assets/img/logo.png" style="width:100%" alt="OrKan Ltd."/>
-        </figure>
-        <nav id="nav-menu">
-            <ul id="items-nav-menu">
-                <li><a href="index.html" class="active"><span>Inicio - </span></a></li>
-				<li><a href="index.html#servicioTecnico"><span>Servicio Técnico - </span></a></li>
-				<li><a href="index.html#empresa"><span>Empresa - </span></a></li>
-				<li><a href="index.html#contacto"><span>Contacto</span></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio">
-            <div id="conteiner-carrousel">
-                <div class="mySlides fade">
-                    <img src="./assets/img/carrousel/image-01.jpg" style="width:100%">
-                </div>                
-                <div class="mySlides fade">
-                    <img src="./assets/img/carrousel/image-02.jpg" style="width:100%">
-                </div>                
-                <div class="mySlides fade">
-                    <img src="./assets/img/carrousel/image-03.jpg" style="width:100%">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid ms-5 me-5">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
+                Conf Bs As
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    <a class="nav-link" href="#oradores">Los oradores</a>
+                    <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                    <a class="nav-link" href="#serOrador">Conviértete en orador</a>
+                    <a class="nav-link text-success" href="#comprar">Comprar tickets</a>
                 </div>
             </div>
-        </section>
-        <section id="servicioTecnico">
-            <div id="detalleServicios">
-                <br>
-                <h1>Servicio Técnico </h1>
-                <br>
-			    <p>
-                    Hoy en día la <strong>informática </strong>se ha hecho  imprescindible para el trabajo diario y la productividad de su empresa.
-                    Las <strong>fallas en los equipos informáticos de escritorio, portátiles y  servidores</strong> causan retrasos, baja productividad e incluso la paralización  total de su actividad empresarial, lo cual puede conllevar importantes pérdidas  económicas que pueden ser evitadas con una correcta asistencia técnica y el  mantenimiento preventivo.<br/>
-                    <br>
-                    <strong>OrKan</strong> le ofrece la posibilidad de disponer de las ventajas de un  departamento técnico propio, permitiéndole obtener un <strong>servicio técnico de  asistencia integral en informática, completamente personalizado a su medida.</strong><br>
-                    <br>
-                    Nuestros trabajos, se resuelven en su domicilio particular,  tanto en el caso de empresas como en el de clientes particulares, determinando mediante  nuestras herramientas de diagnostico y verificación los eventuales  inconvenientes y resolviendo estos efectivamente.
-                    <br>
-                    <strong>Orkan</strong> garantiza a través del abono de mantenimiento el funcionamiento óptimo de su área  informática, dándole la posibilidad de centrarse plenamente en su negocio.<br>
-                    <br>
-                    Técnicos profesionales estarán supervisando  continuamente su infraestructura informática, lo que reduce en un gran  porcentaje la existencia de fallas en el sistema.<br>
-                    <br>
-                    Los Abonos de mantenimiento  incluyen incidencias ilimitadas tanto presenciales como remotas, monitorización  de las copias de seguridad, revisión y puesta a punto de la red, y del sistema.  De esta forma, con una sola cuota mensual tendrá cubiertas todas las  necesidades informáticas de su empresa.<br>
-                    <br>
-                </p>
-                <br>
-                <h3>Servicios incluidos :</h3>
-                <br>
-                <p>
-                    - <strong>Instalación / Verificación del  sistema.</strong><br>
-                    Nos encargamos de la instalación de su red local y equipamiento  informático, o si ya dispone de éste, de la verificación de su sistema actual  de acuerdo con sus necesidades. <br>
-                    - <strong>Soporte Telefónico.</strong><br>
-                    Un servicio telefónico que le garantiza ayuda inmediata y  permanente para resolver cualquier consulta sobre el sistema en general. <br>
-                    - <strong>Soporte Técnico Remoto.</strong><br>
-                    A través de este sistema, podemos conectarnos a sus  ordenadores desde nuestras oficinas con el fin de solucionar los problemas  existentes, ahorrando tiempo en desplazamientos y con  garantía de  seguridad. <br>
-                    - <strong>Soporte Técnico Presencial</strong><br>
-                    Nuestros  técnicos se desplazaran a su domicilio para resolver cualquier tipo de  incidencia
-                </p>
-			    <ul>
-                    <li>Mantenimiento informático preventivo de Servidores, Redes y Equipos.</li>
-			        <li>Optimización de sus sistemas, mejoras de rendimiento y desfragmentacion de discos rígidos.</li>
-			        <li>Sistemas automáticos de copia de seguridad local y remota.</li>
-			        <li>Desinfección, Prevención y actualización de software de protección (Antivirus, Anti-Troyanos, S.O). </li>
-		  	        <li>Limpieza del Registro y archivos temporales generados  por el Sistema Operativo. </li>
-			        <li>Realización Periódica de Backups (respaldo de  Información).</li>
-		            <li>Mantenimiento y Control de redes.</li>
-			        <li>Limpieza y Mantenimiento de Hardware. (control de coolers, estado de fuente de energía, limpieza).</li>
-			        <li>Asistencia y Asesoramiento Telefónico.</li>
-			        <li>Asesoramiento tecnológico.</li>
-			        <li>Servicio de urgencia.</li>
-		        </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row flex-row-reverse imagenFondo align-items-center">
+            <div class="col-5 me-5 text-white">
+                <p class="fs-1 text-end">Conf Bs As</p>
+                <p class="text-end">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro en internet. Ven a conocer a los miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                    <button type="button" class="btn botonFondoComprar">Comprar Ticket</button>
+                </div>
             </div>
-            <div id="imagenesServicios">
-                <figure>
-                    <img src="./assets/img/servicioTecnico/servtec1.jpg" style="width:100%" alt="Tecnicos Especializados"/>
-                    <figcaption>Tecnicos especializados</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/img/servicioTecnico/backup1.jpg" style="width:100%" alt="Recupere datos perdidos"/>
-                    <figcaption>Recupere datos perdidos</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/img/servicioTecnico/backup2.jpg" style="width:100%" alt="Proteja su Información"/>
-                    <figcaption>Proteja su Información</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/img/servicioTecnico/redes1.jpg" style="width:100%" alt="Mantenimiento de redes"/>
-                    <figcaption>Mantenimiento de redes</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/img/servicioTecnico/redes2.jpg" style="width:100%" alt="Acceso y seguridad en su Red"/>
-                    <figcaption>Acceso y seguridad en su Red</figcaption>
-                </figure>
+        </div>
+    </div>
+    <div class="container text-center" id="oradores">
+        <div class="container mt-3">
+            <span>Conoce a los</span>
+            <p class="fs-2 text-uppercase fw-bold">oradores</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-start">
+            <div class="col">
+                <div class="card">
+                <img src="assets/img/steve.jpg" class="card-img-top" alt="Steve Jobs" loading="lazy">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
+                    <span class="badge text-bg-info text-white">React</span>
+                    <h5 class="card-title">Steve Jobs</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sint ex consectetur autem adipisci odio perspiciatis iusto omnis reiciendis suscipit neque unde tenetur magni rerum possimus molestias.</p>
+                </div>
+                </div>
             </div>
-        </section>
-        <section id="empresa">
-            <figure>
-                <img src="./assets/img/empresas/acuerdo.jpg" style="width:100%" alt="Llegar a un acuerdo"/>
-            </figure>
-            <br>
-            <p>
-                Orkan esta  constituida por un selecto grupo de expertos en informática, diseño y rrpp. Con  mas de 7 años de trayectoria en el mercado, y una amplia cartera de clientes  que confían en nosotros. 
-                Aplicamos la última  tecnología, trabajamos a conciencia y esto es lo que garantiza una solución  eficiente del problema. Aseguramos la satisfacción del cliente al ver los  resultados. 
-                Desplegamos  soluciones sobre software, hardware, redes, seguridad y diseño Web, para pequeñas, medianas y grandes  empresas.
-            </p>
-            <figure>
-                <img src="./assets/img/empresas/misionVision.png" style="width:100%" alt="Misión y visión de la empresa"/>
-            </figure>
-        </section>
-        <section id="contacto">
-            <div id="divFormularioContacto">
-                <h1>Contacto</h1>
-			    <p> Ingrese sus datos y consultas para que un representante de <strong>OrKan</strong> se contacte con usted a la brevedad. </p>
-                <br>
-                <form id="formularioContacto" method="" action="#">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required/>
-                    <br><br>
-                    <div id="seleccionar">
-                        <label for="tipoCliente">
-                            <input type="radio" name="tipoCliente" id="tipoCliente" value="particular" required>
-                            Particular
-                        </label>
-                        <label for="tipoCliente" style="margin-left: 25px;">
-                            <input type="radio" name="tipoCliente" id="tipoCliente" value="empresa" required>
-                            Empresa
-                        </label>
+            <div class="col">
+                <div class="card">
+                <img src="assets/img/bill.jpg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">JavaScript</span>
+                    <span class="badge text-bg-info text-white">React</span>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sint ex consectetur autem adipisci odio perspiciatis iusto omnis reiciendis suscipit neque unde tenetur magni rerum possimus molestias.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="assets/img/ada.jpeg" class="card-img-top" alt="..." loading="lazy">
+                <div class="card-body">
+                    <span class="badge text-bg-secondary text-white">Negocios</span>
+                    <span class="badge text-bg-danger text-white">Startups</span>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sint ex consectetur autem adipisci odio perspiciatis iusto omnis reiciendis suscipit neque unde tenetur magni rerum possimus molestias.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="lugar">
+        <div class="row mt-4">
+            <div class="col-6 imagenFondoColumna">
+            </div>
+            <div class="col-6 bg-dark text-white">
+                <div class="mt-3 ms-2">
+                    <h3>Bs As - Octubre</h3>
+                    <p><small>Buenos Aires es la provincia y localidad más grande de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las pricipales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superfície).</small></p>
+                    <button type="button" class="btn btn-outline-light">Conocé más</button>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <div class="container text-center" id="serOrador">
+        <div class="row justify-content-around">
+            <div class="col-7 text-align-center">
+                <div class="container mt-5">
+                    <span class="fs-6 text-uppercase mb-1">Conviértete en un</span>
+                    <p class="fs-1 text-uppercase mb-1">orador</p>
+                    <span>Anótate como orador para dar una</span><span class="subrayadoPunteado"> charla ignite</span><span>. Cuéntanos de qué quieres hablar!</span>
+                </div>
+                <form>
+                    <div class="container mt-3 mb-3">
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control form-control-sm" id="FormControlInputNombre" placeholder="Nombre">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control form-control-sm" id="FormControlInputApellido" placeholder="Apellido">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" id="FormControlTextarea" rows="3" placeholder="Sobre qué querés hablar?"></textarea>
+                            <p class="text-start"><small class="text-secondary">Recuerda incluir un título para tu charla.</small></p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn fondoBotonEnviar text-white">Enviar</button>
+                        </div>
                     </div>
-                    <br>
-                    <label for="mail">Email:</label>
-                    <input type="text" name="mail" id="mail" required/>
-                    <br><br>
-                    <label for="mensaje">Mensaje:</label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" cols="45" rows="10" required></textarea>
-                    <br><br>
-                    <div id="conteiner-submit">
-                        <input type="submit" id="boton-submit" name="boton-submit" value="Enviar"/>
-                        <button type="button" id="boton-reset" name="boton-reset">Resetear</button>
-                    </div>
-                    <br><br>
                 </form>
             </div>
-            <div id="detalleContacto">
-                <h2>Detalles de Contacto </h2>
-                <br>
-                <p id="telefono">
-                    <strong>OrKan Tech Assistance:</strong>
-                    <br>
-                    <small>
-                        <i class="fa fa-phone"></i>
-                        <strong>Cel:</strong> +54 011 15 5555-8888
-                        <br>
-                        <i class="fa fa-phone"></i>
-                        <strong>Cel:</strong> +54 011 15 6666-7777 
-                        <br>
-                    </small>
-                </p>
-                <br>
-                <p id="localizacion">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Ciudad Autónoma de Buenos Aires
-                    <br>
-                    <strong>Republica Argentina</strong>
-                    <br>
-                </p>
-                <br>
-                <!-- <figure>
-                    <img src="./assets/img/contacto/contacto.png" style="width:100%" alt="Contactenos"/>
-                </figure> -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.843717721721!2d-58.3738862!3d-34.6081132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad304a4cc17%3A0xcf1b33537930cef9!2sPalacio%20Municipal%20de%20la%20Cdad.%20de%20Buenos%20Aires%2C%20C1059%20CABA!5e0!3m2!1ses-419!2sar!4v1653602668683!5m2!1ses-419!2sar"
-                        style="width:100%"
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <br>
-                <br>
-                <h2>
-                    Esperamos su consulta
-                    <i class="fa-regular fa-comments"></i>
-                </h2>
-                <br>
-                <small>
-                    En <strong>OrKan</strong> trabajamos para usted y nos brindamos a su disposición para poder atender y responder eventuales  inquietudes y requerimientos.
-                </small>
-                <br>
-            </div>
-        </section>
-    </main>
-    <footer id="pieDePagina">
-        <br><br><br><br>
-        <small>
-            Copyrights 2022 - <strong>OrKan Tech Assistance</strong>
-        </small>
-    </footer>
-    <script src="./js/scripts.js"></script>
+        </div>
+    </div>
+    <div class="conteiner fondoFooter">
+        <div class="row text-white text-center justify-content-center align-items-center">
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Preguntas frecuentes</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Contáctanos</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Prensa</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Conferencia</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Términos y condiciones</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Privacidad</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Estudiantes</small></div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
