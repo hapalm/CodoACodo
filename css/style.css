@@ -43,3 +43,48 @@
 .fondoFooter {
     background-color: #1c5475;
 }
+
+.margenPrincipal {
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.bordeAzul {
+    border: 1px solid blue
+}
+
+.bordeVerde {
+    border: 1px solid green
+}
+
+.bordeNaranja {
+    border: 1px solid orange
+}
+
+.estiloCard {
+    width: 14rem;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.textoSecundarioCard {
+    font-size: small;
+}
+
+.ventaMargenSup {
+    margin-top: 15px;
+}
+
+.etiquetaIzquierda {
+    text-align: left;
+}
+
+.total {
+    background-color: lightblue;
+    color: darkblue;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -9,26 +9,28 @@
     <title>La Conferencia</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid ms-5 me-5">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
-                Conf Bs As
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                    <a class="nav-link" href="#oradores">Los oradores</a>
-                    <a class="nav-link" href="#lugar">El lugar y la fecha</a>
-                    <a class="nav-link" href="#serOrador">Conviértete en orador</a>
-                    <a class="nav-link text-success" href="#comprar">Comprar tickets</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid ms-5 me-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
+                    Conf Bs As
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                        <a class="nav-link" href="#oradores">Los oradores</a>
+                        <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                        <a class="nav-link" href="#serOrador">Conviértete en orador</a>
+                        <a class="nav-link text-success" href="compraTickets.html">Comprar tickets</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="container-fluid">
         <div class="row flex-row-reverse imagenFondo align-items-center">
             <div class="col-5 me-5 text-white">
@@ -36,7 +38,7 @@
                 <p class="text-end">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro en internet. Ven a conocer a los miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                    <button type="button" class="btn botonFondoComprar">Comprar Ticket</button>
+                    <a class="btn botonFondoComprar" href="compraTickets.html">Comprar Ticket</a>
                 </div>
             </div>
         </div>

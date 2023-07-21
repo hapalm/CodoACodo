@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Comprar de Tickets</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid ms-5 me-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
+                    Conf Bs As
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">La conferencia</a>
+                        <a class="nav-link" href="#oradores">Los oradores</a>
+                        <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                        <a class="nav-link active" href="#serOrador">Conviértete en orador</a>
+                        <a class="nav-link text-success" href="compraTickets.html">Comprar tickets</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid margenPrincipal">
+        <div class="container text-center" id="#descuentos">
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <div class="col estiloCard">
+                    <div class="card bordeAzul">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text fw-bold">80%</p>
+                            <h6 class="card-subtitle mb-2 text-muted textoSecundarioCard">* presentar documentación</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col estiloCard">
+                    <div class="card bordeVerde">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text fw-bold">50%</p>
+                            <h6 class="card-subtitle mb-2 text-muted textoSecundarioCard">* presentar documentación</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col estiloCard">
+                    <div class="card bordeNaranja">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tiene un descuento</p>
+                            <p class="card-text fw-bold">15%</p>
+                            <h6 class="card-subtitle mb-2 text-muted textoSecundarioCard">* presentar documentación</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center g-2">
+                    <div class="col-8 mt-3">
+                        <span >VENTA</span>
+                        <h2>VALOR DE TICKET $200</h2>
+                    </div>
+                <form>
+                    <div class="container mt-1 mb-3">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-4 mb-3 ps-0 pe-1">
+                                <input type="text" class="form-control form-control" id="FormControlInputNombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-sm-4 mb-3 ps-1 pe-0">
+                                <input type="text" class="form-control form-control" id="FormControlInputApellido" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 ps-0 pe-0">
+                                <input type="mail" class="form-control form-control" id="FormControlInputMail" placeholder="Correo">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-sm-4 mb-3 ps-0 pe-1">
+                                <div class="row">
+                                    <label class="etiquetaIzquierda" for="FormControlInputCantidad">Cantidad</label>
+                                </div>
+                                <input type="number" class="form-control form-control mt-1" id="FormControlInputCantidad" placeholder="Cantidad" min="1">
+                            </div>
+                            <div class="col-sm-4 mb-3 ps-1 pe-0">
+                                <div class="row">
+                                    <label class="etiquetaIzquierda" for="FormControlInputCategoria">Categoria</label>
+                                </div>
+                                <select class="form-select mt-1" id="FormControlInputCategoria">
+                                    <option value="1">Estudiante</option>
+                                    <option value="2">Trainee</option>
+                                    <option value="3">Junior</option>
+                                    <option value="0">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8 mb-3 total">
+                                <span id="spanTotalTexto">Total a pagar: $</span>
+                                <span id="spanTotalImporte"></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-4 mb-3 ps-0 pe-1">
+                                <button type="reset" class="btn fondoBotonEnviar text-white w-100" onclick="limpiar()">Borrar</button>
+                            </div>
+                            <div class="col-sm-4 mb-3 ps-1 pe-0">
+                                <button type="button" class="btn fondoBotonEnviar text-white w-100" onclick="validarFormulario()">Resumen</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center">
+
+        </div>
+    </div>
+    <div class="conteiner fondoFooter">
+        <div class="row text-white text-center justify-content-center align-items-center">
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Preguntas frecuentes</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Contáctanos</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Prensa</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Conferencia</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Términos y condiciones</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Privacidad</small></div>
+            <div class="col-1 ms-4 mt-4 mb-4"><small>Estudiantes</small></div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/compra.js"></script>
+</body>
+</html>
