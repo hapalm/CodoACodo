@@ -2,144 +2,88 @@
 <html lang="es-AR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>La Conferencia</title>
+    <link rel="shortcut icon" href="./imagenes/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Blog</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid ms-5 me-5">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
-                    Conf Bs As
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                        <a class="nav-link" href="#oradores">Los oradores</a>
-                        <a class="nav-link" href="#lugar">El lugar y la fecha</a>
-                        <a class="nav-link" href="#serOrador">Conviértete en orador</a>
-                        <a class="nav-link text-success" href="compraTickets.html">Comprar tickets</a>
-                    </div>
-                </div>
-            </div>
+    <header class="cabecera">
+        <figure class="figura">
+            <img src="./imagenes/desarrollo-web.jpg" style="width:20%" alt="Grupo Desarrollo Web"/>
+        </figure>
+        <nav id="nav-menu">
+            <ul id="items-nav-menu">
+                <li class="bordeDerecho"><a href="index.html" class="active"><span>Inicio</span></a></li>
+				<li class="bordeDerecho"><a href="#acercaDelGrupo"><span>Acerca del Grupo</span></a></li>
+                <li class="bordeDerecho"><a href="#ifts-16"><span>IFTS-16</span></a></li>
+				<li class="bordeDerecho"><a href="Alejo.html"><span>Alejo</span></a></li>
+                <li class="bordeDerecho"><a href="Nahuel.html"><span>Nahuel</span></a></li>
+            </ul>
         </nav>
     </header>
-    <div class="container-fluid">
-        <div class="row flex-row-reverse imagenFondo align-items-center">
-            <div class="col-5 me-5 text-white">
-                <p class="fs-1 text-end">Conf Bs As</p>
-                <p class="text-end">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro en internet. Ven a conocer a los miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                    <a class="btn botonFondoComprar" href="compraTickets.html">Comprar Ticket</a>
-                </div>
+    <main>
+        <section id="acercaDelGrupo">
+            <br><br><br><br>
+            <div class="bordeTexto">
+                <p class="presentacion">
+                Somos un grupo de personas que tenemos la misma ambición. Ser profecionales de calidad.
+                Y para lograr nuestro objetio común, nos inscribimnos en IFTS-16.
+                Empezamos siendo un grupo de estudio, luego pasamos a ser un grupo de trabajo, para finalmente convertirnos en un grupo de amigos.
+                Empezamos con una idea de lo que queríamos y ahora estamos a un paso de recibirnos de analistas.
+                Una empresa que llevó su esfuerzo y que convertiremos en realidad en unos pocos meses.
+                </p>
+                <br>
+                <img
+                    src="./imagenes/imagenGrupo.jpg"
+                    class="img-fluid rounded-top"
+                    alt="Grupo"
+                    style="width: 50%;"
+                />
+                
             </div>
-        </div>
-    </div>
-    <div class="container text-center" id="oradores">
-        <div class="container mt-3">
-            <span>Conoce a los</span>
-            <p class="fs-2 text-uppercase fw-bold">oradores</p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 text-start">
-            <div class="col">
-                <div class="card">
-                <img src="assets/img/steve.jpg" class="card-img-top" alt="Steve Jobs" loading="lazy">
-                <div class="card-body">
-                    <span class="badge text-bg-warning">JavaScript</span>
-                    <span class="badge text-bg-info text-white">React</span>
-                    <h5 class="card-title">Steve Jobs</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sint ex consectetur autem adipisci odio perspiciatis iusto omnis reiciendis suscipit neque unde tenetur magni rerum possimus molestias.</p>
-                </div>
-                </div>
+        </section>
+        <br><br><br><br><br><hr><br>
+        <section id="ifts-16">
+            <div id="detalleContacto">
+                <h2>IFTS-16</h2>
+                <br>
+                <p id="telefono">
+                    <small>
+                        <strong>Teléfono:</strong> 011 4566-2084
+                        <br>
+                    </small>
+                </p>
+                <br>
+                <p id="localizacion">
+                    Ciudad Autónoma de Buenos Aires
+                    <br>
+                    <strong>Republica Argentina</strong>
+                    <br>
+                </p>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.22588790349!2d-58.4549269!3d-34.5837631!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f082f3d305%3A0xec74f41df5977485!2sIFTS%20N%C2%B016!5e0!3m2!1ses!2sar!4v1714104727071!5m2!1ses!2sar"
+                    width="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <br>
+                <br>
+                <h2>
+                    ¡Vení a visitarnos!
+                </h2>
+                <br>
             </div>
-            <div class="col">
-                <div class="card">
-                <img src="assets/img/bill.jpg" class="card-img-top" alt="..." loading="lazy">
-                <div class="card-body">
-                    <span class="badge text-bg-warning">JavaScript</span>
-                    <span class="badge text-bg-info text-white">React</span>
-                    <h5 class="card-title">Bill Gates</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sint ex consectetur autem adipisci odio perspiciatis iusto omnis reiciendis suscipit neque unde tenetur magni rerum possimus molestias.</p>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                <img src="assets/img/ada.jpeg" class="card-img-top" alt="..." loading="lazy">
-                <div class="card-body">
-                    <span class="badge text-bg-secondary text-white">Negocios</span>
-                    <span class="badge text-bg-danger text-white">Startups</span>
-                    <h5 class="card-title">Ada Lovelace</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sint ex consectetur autem adipisci odio perspiciatis iusto omnis reiciendis suscipit neque unde tenetur magni rerum possimus molestias.</p>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" id="lugar">
-        <div class="row mt-4">
-            <div class="col-6 imagenFondoColumna">
-            </div>
-            <div class="col-6 bg-dark text-white">
-                <div class="mt-3 ms-2">
-                    <h3>Bs As - Octubre</h3>
-                    <p><small>Buenos Aires es la provincia y localidad más grande de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las pricipales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superfície).</small></p>
-                    <button type="button" class="btn btn-outline-light">Conocé más</button>
-                </div>
-            </div>
-        </div>            
-    </div>
-    <div class="container text-center" id="serOrador">
-        <div class="row justify-content-around">
-            <div class="col-7 text-align-center">
-                <div class="container mt-5">
-                    <span class="fs-6 text-uppercase mb-1">Conviértete en un</span>
-                    <p class="fs-1 text-uppercase mb-1">orador</p>
-                    <span>Anótate como orador para dar una</span><span class="subrayadoPunteado"> charla ignite</span><span>. Cuéntanos de qué quieres hablar!</span>
-                </div>
-                <form>
-                    <div class="container mt-3 mb-3">
-                        <div class="mb-3">
-                            <div class="row">
-                                <div class="col-6">
-                                    <input type="text" class="form-control form-control-sm" id="FormControlInputNombre" placeholder="Nombre">
-                                </div>
-                                <div class="col-6">
-                                    <input type="text" class="form-control form-control-sm" id="FormControlInputApellido" placeholder="Apellido">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control form-control-lg" id="FormControlTextarea" rows="3" placeholder="Sobre qué querés hablar?"></textarea>
-                            <p class="text-start"><small class="text-secondary">Recuerda incluir un título para tu charla.</small></p>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn fondoBotonEnviar text-white">Enviar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="conteiner fondoFooter">
-        <div class="row text-white text-center justify-content-center align-items-center">
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Preguntas frecuentes</small></div>
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Contáctanos</small></div>
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Prensa</small></div>
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Conferencia</small></div>
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Términos y condiciones</small></div>
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Privacidad</small></div>
-            <div class="col-1 ms-4 mt-4 mb-4"><small>Estudiantes</small></div>
-        </div>
-    </div>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+        </section>
+    </main>
+    <footer id="pieDePagina">
+        <br><br><br>
+        <small>
+            Copyrights 2024 - <strong>Desarrollo Web</strong>
+        </small>
+        <br><br><br>
+    </footer>
 </body>
 </html>
