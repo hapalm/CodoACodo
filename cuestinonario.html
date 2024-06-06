@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="js/cuestionario.js"></script>
+    <title>Cuestionario del Blog</title>
+</head>
+<body>
+    <header class="cabecera">
+        <figure class="figura">
+            <img src="./imagenes/desarrollo-web.jpg" style="width:20%" alt="Grupo Desarrollo Web"/>
+        </figure>
+        <nav id="nav-menu">
+            <ul id="items-nav-menu">
+                <li class="bordeDerecho"><a href="index.html" class="active"><span>Inicio</span></a></li>
+				<li class="bordeDerecho"><a href="#acercaDelGrupo"><span>Acerca del Grupo</span></a></li>
+                <li class="bordeDerecho"><a href="#ifts-16"><span>IFTS-16</span></a></li>
+				<li class="bordeDerecho"><a href="alejo.html"><span>Alejo</span></a></li>
+                <li class="bordeDerecho"><a href="Nahuel.html"><span>Nahuel</span></a></li>
+                <li class="bordeDerecho"><a href="cuestinonario.html"><span>Cuestionario</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <h1>Cuestionario</h1>
+    <br>
+    <form class="cuestinonario" id="cuestionario" onsubmit="validarRespuestas(event)">
+        <!-- Pregunta 1 -->
+        <p class="pregunta">1. ¿Cuántos estudiantes integran el grupo?</p>
+        <br>
+        <input type="text" id="q1" name="q1" placeholder="Escribe tu respuesta aquí"><br>
+        <br><br>
+        <!-- Pregunta 2 -->
+        <p class="pregunta">2. ¿Cuál es la carrera que estudian los integrantes?</p>
+        <br>
+        <input type="text" id="q2" name="q2" placeholder="Escribe tu respuesta aquí"><br>
+        <br><br>
+        <!-- Pregunta 3 -->
+        <p class="pregunta">3. ¿Dónde estudian los integrantes del grupo?</p>
+        <br>
+        <input type="text" id="q3" name="q3" placeholder="Escribe tu respuesta aquí"><br>
+        <br><br>
+        <!-- Pregunta 4 -->
+        <p class="pregunta">4. ¿Dónde se encuentra el instituto donde se forma el grupo?</p>
+        <br>
+        <input type="text" id="q4" name="q4" placeholder="Escribe tu respuesta aquí"><br>
+        <br><br>
+        <!-- Pregunta 5 -->
+        <p class="pregunta">5. ¿Cuáles son los nombres de los integrantes?</p>
+        <br>
+        <input type="text" id="q5" name="q5" placeholder="Escribe tu respuesta aquí"><br>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!--footer--> 
+    <footer id="pieDePagina">
+        <br><br><br>
+        <iframe src="relojDigital.html" frameborder="0"></iframe>
+        <br>
+        <small>
+            Copyrights 2024 - <strong>Desarrollo Web</strong>
+        </small>
+        <br><br><br>
+    </footer>
+</body>
+</html>
