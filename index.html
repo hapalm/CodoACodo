@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="js/relojDigital.js"></script>
     <title>Blog</title>
 </head>
 <body>
@@ -23,6 +24,10 @@
             </ul>
         </nav>
     </header>
+    <br><br>
+    <body onload="actualizarReloj()">
+        <div id="reloj"></div>
+    <br><br>
     <main>
         <section id="acercaDelGrupo">
             <br><br><br><br>
@@ -81,7 +86,8 @@
     </main>
     <footer id="pieDePagina">
         <br><br><br>
-        <iframe src="relojDigital.html" frameborder="0"></iframe>
+        <body onload="actualizarReloj()">
+            <div id="reloj"></div>
         <br>
         <small>
             Copyrights 2024 - <strong>Desarrollo Web</strong>
